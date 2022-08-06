@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%)
+    
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    
+}
+section{
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 5rem 10rem 5rem ;
+}
+
+
+.sedan{
+    padding: 2rem;
+    background: var(--Brightorange);
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+}
+.suvs{
+    padding: 2rem;
+    background: var(--Darkcyan);
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+
+
+}
+.luxury{
+    padding: 2rem;
+    background: var(--Verydarkcyan);
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+.trips{
+    padding: 0 10rem 10rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.trip{
+    padding: 2rem;;
+    /* position: relative;
+    overflow: hidden;
+    z-index: 0; */
+    
+}
+
+.trip p{
+    color: var(--Transparentwhite);
+    font-weight: 400;
+    margin: 2.5rem 0 6rem 0;
+}
+.top{
+    content: '';
+    color: var(--Transparentwhite);
+    opacity: 0.6;
+    width: 10px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.trip h3{
+    color: var(--Verylightgray);
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: .9rem;
+}
+
+.trip button{
+    padding: .7rem;
+    background: var(--Transparentwhite);
+    border-radius: 1.4rem;
+    outline: none;
+    border: none;
+    padding-inline: 1rem;
+
+}
+.sedan button{
+    color: var(--Brightorange);
+}
+.sedan button:hover,
+:focus {
+    border: 2px solid white;
+    color: white;
+    background: var(--Brightorange);
+}
+
+.suvs button{
+    color: var(--Darkcyan);
+}
+.suvs button:hover,
+:focus {
+    border: 2px solid white;
+    color: white;
+    background:  var(--Darkcyan);
+}
+
+.luxury button{
+    color: var(--Verydarkcyan);
+}
+.luxury button:hover,
+:focus {
+    border: 2px solid white;
+    color: white;
+    background: var(--Verydarkcyan);
+}
+
+/* media quarries */
+
+@media (max-width: 991px){
+    section{
+        place-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem .5rem 1rem .5rem ;
+    }
+    .trips{
+        padding: 0rem 0rem 0rem 0rem;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .luxury {
+        padding: 2rem;
+        background: var(--Verydarkcyan);
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+    .sedan{
+        padding: 2rem;
+        background: var(--Brightorange);
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    
+    }
+
+}
+
+@media (max-width: 768px){
+    .trips{
+        padding: 0rem 0rem 0rem 0rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .attribution{
+        display: none;
+    }
+    
+}
+
+
+
